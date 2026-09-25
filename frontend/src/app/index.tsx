@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
+import { router } from "expo-router";
 
 const API_URL = process.env.EXPO_PUBLIC_API_URL;
 
@@ -80,7 +81,7 @@ export default function HomeScreen() {
       <Text style={styles.title}>Coconut Smart System</Text>
 
       <Text style={styles.description}>
-        Test your trained model using a sample tree.
+        Test your trained model using a sample trees.
       </Text>
 
       <Pressable
@@ -91,6 +92,13 @@ export default function HomeScreen() {
         <Text style={styles.buttonText}>
           {loading ? "Predicting..." : "Get Fertilizer Prediction"}
         </Text>
+      </Pressable>
+
+      <Pressable
+        onPress={() => router.push("/fertilizer")}
+        style={[styles.button, { marginTop: 16 }]}
+      >
+        <Text style={styles.buttonText}>Open My Farm</Text>
       </Pressable>
 
       {result !== null && (
