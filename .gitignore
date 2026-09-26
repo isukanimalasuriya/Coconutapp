@@ -6,6 +6,7 @@
 # Python virtual environments
 .venv/
 .venv-ai/
+.venv311
 venv/
 
 # Python generated files
