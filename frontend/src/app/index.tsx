@@ -6,7 +6,7 @@ const API_URL = process.env.EXPO_PUBLIC_API_URL;
 
 // Sample inputs matching your trained model's 19 features.
 const sampleInput = {
-  tree_age_years: 1,
+  tree_age_years: 10,
   soil_ph: 5.5,
   nitrogen_mg_kg: 29.1,
   phosphorus_mg_kg: 32.5,
