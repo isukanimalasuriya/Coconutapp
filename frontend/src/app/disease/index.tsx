@@ -7,7 +7,7 @@ export default function DiseaseScreen() {
         <Text style={styles.title}>Disease Detection</Text>
 
         <Text style={styles.description}>
-          Scan coconut leaves and detect diseases using AI.
+          Scan coconut leaves and detect diseases using AI.s
         </Text>
       </View>
     </SafeAreaView>
