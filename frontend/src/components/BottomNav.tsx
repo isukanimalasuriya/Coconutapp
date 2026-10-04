@@ -21,7 +21,7 @@ export default function BottomNav() {
       icon: House,
     },
     {
-      label: "Resources",
+      label: "Fertilizer",
       route: "/fertilizer",
       icon: Grid2X2,
     },
